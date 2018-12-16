@@ -1,5 +1,5 @@
 var inc = 0.1;
-var scl = 30; //scale
+var scl = 20; //scale
 var cols, rows;
 
 var zoff=0;
