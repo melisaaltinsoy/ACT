@@ -1,5 +1,5 @@
 var inc = 0.1;
-var scl = 20; //scale
+var scl = 15; //scale
 var cols, rows;
 
 var zoff=0;
@@ -33,7 +33,7 @@ function draw() {
       }
     yoff += inc;
     
-    zoff += 0.0001;
+    zoff += 0.0003;
   }  
   
 
