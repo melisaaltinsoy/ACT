@@ -7,8 +7,8 @@ var zoff=0;
 function setup() {
   createCanvas(screen.width, screen.height);
  
-  cols = floor((screen.width)/scl);
-  rows = floor((screen.height)/scl);
+  rows = floor((screen.width)/scl);
+  cols = floor((screen.height)/scl);
 }
 
 function draw() {
