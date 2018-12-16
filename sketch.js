@@ -7,7 +7,7 @@ var zoff=0;
 var particle = [];
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(screen.width, screen.height);
   
   //pixelDensity(1); //we did for mac retina WHEN WE USE PIXEL FUNCTION
   cols = floor((width)/scl);
