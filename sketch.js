@@ -1,33 +1,23 @@
-var inc = 0.07;
-var scl = 8; //scale
+var inc = 0.1;
+var scl = 15; //scale
 var cols, rows;
 
 var zoff=0;
 
-var particle = [];
-
 function setup() {
   createCanvas(screen.width, screen.height);
-  
-  //pixelDensity(1); //we did for mac retina WHEN WE USE PIXEL FUNCTION
-  cols = floor((width)/scl);
-  rows = floor((height)/scl);
-  
-  //particle[0] = new Particle();
+ 
+  cols = floor((screen.width)/scl);
+  rows = floor((screen.height)/scl);
 }
 
 function draw() {
   background(0);
-  
-  var yoff = 0;
-  
- 
+  var yoff = 0; 
   for(var x = 0; x<rows; x++) {
       var xoff = 0;
       for(var y = 0; y<cols; y++) {
-        var index = (x + y*width)*4;
         var angle = noise(xoff,yoff,zoff)*TWO_PI;
-        //var v = createVector();
         var v = p5.Vector.fromAngle(angle);
         xoff += inc;
         //fill(random(255));
@@ -43,11 +33,10 @@ function draw() {
       }
     yoff += inc;
     
-    zoff += 0.001;
+    zoff += 0.0005;
   }  
   
-  //particle[0].update();
-  //particle[0].show();
+
  
   
 }
