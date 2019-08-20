@@ -20,9 +20,9 @@ function draw() {
         var angle = noise(xoff,yoff,zoff)*TWO_PI;
         var v = p5.Vector.fromAngle(angle);
         xoff += inc;
-        fill(random(255));
-        fill(r);
-        rect(x*scl, y*scl, scl, scl);
+        //fill(random(255));
+        //fill(r);
+        //rect(x*scl, y*scl, scl, scl);
         stroke(255);
         push();
         translate(x*scl,y*scl);
