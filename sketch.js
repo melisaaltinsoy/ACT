@@ -4,12 +4,22 @@ var cols, rows;
 
 var zoff=0;
 
+function preload() {
+  soundFormats('mp3', 'ogg');
+  mySound = loadSound('assets/Missere.mp3');
+}
+
 function setup() {
   createCanvas(screen.width, screen.height);
  
   rows = floor((screen.width)/scl);
   cols = floor((screen.height)/scl);
+  mySound.setVolume(0.5);
+  mySound.play();
 }
+
+
+
 
 function draw() {
   background(0);
